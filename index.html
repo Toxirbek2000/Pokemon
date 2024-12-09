@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <style type="text/tailwindcss">
+        @layer utilities {
+          .content-auto {
+            content-visibility: auto;
+          }
+        }
+    </style>
+    <title>Pokemon</title>
+</head>
+<body>
+    <section class="p-3 pl-40">
+        <div class="max-w-[63%]">
+        <div class="flex item-center justify-center">
+          <input class="search-input mb-[40px] pl-8 pr-2 py-2 h-12 xl:h-14 rounded-full bg-white shadow-[0px_3px_8px_#8b8888] w-full" type="text" placeholder="Enter name or random number...">
+          <p class="count "></p>
+        </div>
+        <ul class="list max-w-full flex item-center justify-between flex-wrap border-2px border-solid border-black h-full"></ul>
+        </div>
+    </section>
+    <div class=" modal p-[40px] fixed h-[84vh] w-[30%] right-[42px] top-0 bottom-0 bg-white my-auto rounded-xl shadow-[0_4px_12px_#000] flex flex-col item-center ">
+          Sellect one of these pokemons
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+    </script>
+    <script src="./js/pakemon.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html> 
